@@ -29,8 +29,7 @@ class Home extends React.Component {
           </div>
         ) : (
           <div className="movies">
-            {movies.map((movie) => {
-              return (
+            {movies.map(movie => (
                 <Movie
                   key={movie.id}
                   id={movie.id}
@@ -40,8 +39,7 @@ class Home extends React.Component {
                   poster={movie.medium_cover_image}
                   genres={movie.genres}
                 />
-              );
-            })}
+            ))}
           </div>
         )}
       </section>
