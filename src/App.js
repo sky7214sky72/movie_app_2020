@@ -6,8 +6,10 @@ import Home from './routes/Home';
 import Navigation from './components/Navigation';
 import Detail from './routes/Detail';
 
+//App 컴포넌트를 정의함
 function App() {
   return (
+    //App 컴포넌트는 HTML을 반환하고 있음
     <HashRouter>
       <Navigation />
       <Route path="/" exact={true} component={Home}></Route>

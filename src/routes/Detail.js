@@ -30,7 +30,7 @@ class Detail extends React.Component {
                       );
                     })}
                   </ul>
-                  <p className="movie__summary">{location.state.summary.slice(0, 180)}...</p>
+                  <p className="movie__summary">{location.state.summary}...</p>
                 </div>
               </div>
             </div>  
