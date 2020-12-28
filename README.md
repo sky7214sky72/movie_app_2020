@@ -1,5 +1,11 @@
 # Movie App 2020
-React JS Fundamentals Course 2020
+![1](https://user-images.githubusercontent.com/45224987/103220181-f9b5dc80-4962-11eb-9bee-074ae16074ea.jpg)  
+
+
+이책보고 만든 리액트 사이트  
+입문용으론 좋은데 개념정리를 위해 여러번 읽고 다른 개발도 해봐야 할듯  
+
+
 앱 실행 시나리오 -> 
 
 최초로 render() 함수가 실행 -> 
