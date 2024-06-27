@@ -15,7 +15,7 @@ class Home extends React.Component {
       data: {
         data: { movies },
       },
-    } = await axios.get('https://yts-proxy.now.sh/list_movies.json?sort_by=rating');
+    } = await axios.get('https://yts.mx/api/v2/list_movies.json?sort_by=rating');
     this.setState({ movies, isLoading: false });//구조분해할당으로 얻은 영화 데이터가 있는 변수
   };
   //App 컴포넌트가 그려지면(render() 함수가 실행되면) 호출되는 생명주기 함수
