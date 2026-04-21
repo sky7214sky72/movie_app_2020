@@ -1,0 +1,22 @@
+{
+  "data": {
+    "movies": [
+      {
+        "id": 1,
+        "year": 2014,
+        "title": "Interstellar",
+        "summary": "웜홀을 통해 우주를 탐험하는 탐험가들의 이야기...",
+        "medium_cover_image": "https://yts.mx/assets/images/movies/interstellar_2014/medium-cover.jpg",
+        "genres": ["Drama", "Sci-Fi"]
+      },
+      {
+        "id": 2,
+        "year": 2008,
+        "title": "The Dark Knight",
+        "summary": "배트맨과 조커의 숨막히는 대결...",
+        "medium_cover_image": "https://yts.mx/assets/images/movies/the_dark_knight_2008/medium-cover.jpg",
+        "genres": ["Action", "Crime", "Drama"]
+      }
+    ]
+  }
+}
