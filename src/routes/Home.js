@@ -10,13 +10,12 @@ class Home extends React.Component {
     movies: [],
   };
   getMovies = async () => {
-    //구조분해할당
     const {
       data: {
         data: { movies },
       },
-    } = await axios.get('/movies.json');
-    this.setState({ movies, isLoading: false });//구조분해할당으로 얻은 영화 데이터가 있는 변수
+    } = await axios.get(process.env.PUBLIC_URL + '/movies.json'); 
+    this.setState({ movies, isLoading: false });
   };
   //App 컴포넌트가 그려지면(render() 함수가 실행되면) 호출되는 생명주기 함수
   componentDidMount() {
