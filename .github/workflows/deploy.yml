@@ -1,0 +1,31 @@
+name: Deploy React to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main # 메인 브랜치에 코드가 푸시되거나 수정될 때 작동
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18' # 사용하시는 노드 버전에 맞게 수정
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build # 빌드 결과물이 담기는 폴더 (Vite를 쓰신다면 ./dist 로 변경)
